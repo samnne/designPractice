@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copilot</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/1bb4953290.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-blue-950 h-lvh">
+    <nav class="flex">
+      <div class="navbar-icon-logo group">
+        <div class="flex justify-center items-center">
+          <img
+            src="https://www.cuanschutz.edu/images/officeofinformationtechnologycuanschutzlibraries/default-album/copilot-logo.png?sfvrsn=66e41bbb_1"
+            alt=""
+            class="w-6 h-6"
+          />
+          <span class="ml-0.5 font-semibold font-sans">Copilot</span>
+        </div>
+
+        <span class="sidebar-tooltip-cop group-hover:scale-100">Copilot</span>
+      </div>
+      <div class="navbar-icon group">
+        <i class="fa-solid fa-film"></i>
+        <span class="sidebar-tooltip-cop group-hover:scale-100">History</span>
+      </div>
+      <div class="navbar-icon group">
+        <i class="fa-solid fa-comments"></i>
+        <span class="sidebar-tooltip-cop group-hover:scale-100">New Chat</span>
+      </div>
+    </nav>
+
+    <main class="flex items-center flex-col justify-center h-1/2">
+      <h1
+        class="font-semibold text-white text-center mt-auto text-shadow-black text-4xl"
+      >
+        Good Morning <br />
+        What can I help with you today?
+      </h1>
+    </main>
+    <section class="flex justify-end items-center flex-col h-5/12 mb-5">
+      <article
+        class="flex justify-center text-white items-center w-fit py-1.5 rounded-3xl bg-gray-700"
+      >
+        <div class="message-icon group">
+          <i class="fa-regular fa-plus hover:bg-gray-800 p-2.5 rounded-xl"></i>
+          <span class="sidebar-tooltip-cop-input group-hover:scale-100"
+            >Add</span
+          >
+        </div>
+        <input
+          type="text"
+          class="bg-gray-800 w-[28rem] p-3 rounded-2xl self-center h-11/12 outline-0"
+          placeholder="Message Copilot"
+        />
+        <div class="message-icon group">
+          <i
+            class="fa-solid fa-microphone hover:bg-gray-800 p-2.5 rounded-xl"
+          ></i>
+          <span class="sidebar-tooltip-cop-micro group-hover:scale-100"
+            >Speak</span
+          >
+        </div>
+      </article>
+    </section>
+    <footer class="flex justify-center items-start">
+      <small class="text-[0.6rem] text-red-200 font-light">
+        Copilot may make mistakes. By interacting with Copilot, you agree to the
+        Terms of Use. See our Privacy Statement.</small
+      >
+    </footer>
+  </body>
+</html>
