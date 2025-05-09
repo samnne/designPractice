@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/1bb4953290.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center min-h-screen bg-amber-200 gap-5"
+    >
+      <div class="relative h-80 w-60 bg-white">
+        <article
+          id="book-cover"
+          class="pages bg-[url('../../peach.jpg')] z-10 bg-cover bg-center"
+        ></article>
+        <article id="1" class="pages z-5 bg-amber-500"></article>
+        <div
+          class="z-2 w-full h-full bg-red-500 flex justify-center items-center flex-col text-center font-sans font-semibold"
+        >
+          <h1>This is Peachy.</h1>
+          <p class="text-xs w-30">
+            This is also a very peachy patch of text. I hope you enjoy
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="#book-cover"
+        role="button"
+        class="bg-gradient-to-r from-purple-500 to-pink-500 px-4 py-2 hover:from-purple-800 shadow-md shadow-white hover:to-pink-800 rounded-lg cursor-pointer peer"
+      >
+        Flip
+      </a>
+      <span id="display"></span>
+    </div>
+  </body>
+  <script defer>
+    document.querySelector("a").addEventListener("click", (e) => {
+      e.preventDefault();
+      let allPages = document.querySelectorAll("article");
+      console.log(allPages);
+      for (let i = 0; i < allPages.length; i++) {
+        console.log(allPages[i]);
+        if (allPages[i].id === "book-cover") {
+          document
+            .getElementById("book-cover")
+            .classList.toggle("rotate-y-[85deg]");
+          document.getElementById("book-cover").classList.toggle("rotate-x-6");
+        } else {
+          let degree = (80 - 2 * i).toString() + "deg";
+          console.log(`${degree}`);
+          allPages[i].classList.toggle(`rotate-y-[80deg]`);
+
+          allPages[i].classList.toggle("rotate-x-6");
+        }
+      }
+    });
+  </script>
+</html>

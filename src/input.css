@@ -25,4 +25,11 @@
   .message-icon {
     @apply relative flex flex-col justify-center h-6  px-2 text-white;
   }
+  .pages {
+    @apply absolute h-80 w-60  transition-all  duration-500 transform origin-left rotate-0 peer-checked:rotate-y-[80deg] peer-checked:rotate-x-6;
+  }
+}
+
+.rotateY {
+  transform: rotateY(75deg);
 }
